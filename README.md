@@ -36,9 +36,9 @@
 - VL53L0X 레이저 센서는 각 섹터마다 하나씩 설치하여 물체의 벨트 이동 중 끼임 상태를 확인
 - ESP8266을 통해 Wi-Fi에 연결하여 벨트 내 물체의 끼임 상태를 계속해서 서버에 전송 및 관리자에게 알림
 
-## 코드 파일
-
-
+## 사진
+![image01](https://github.com/user-attachments/assets/314d692a-7076-44ff-8528-0803608eff3b) 
+![image02](https://github.com/user-attachments/assets/455a404e-87f6-4c7c-b93e-45683171e1ab)
 
 ## 데이터베이스 테이블 구조
   
