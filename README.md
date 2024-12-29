@@ -1,5 +1,5 @@
 # PAS (Parcel Automation System)
-개발기간: 2024-11-26~2024-12-10
+개발기간: 2024-11-26~2024-12-10  
 개발인원: 3명  
 
 ## 프로젝트 배경 및 개요
@@ -53,9 +53,15 @@
    - sector_4 // VL53L0X 레이저 센서 4의 상태 업데이트
    - sector_insert // sector_1~4의 쿼리문이 UPDATE이므로 첫 데이터 삽입을 위한 INSERT 쿼리문  
   
-2. **안드로이드 스튜디오**
+2. **Android Studio**
    (1) Java
-      - 
+      - MainActivity // 실시간 모니터링 화면
+
+   (2) XML
+      - activity_main
+
+3. **Arduino**
+   - 
 
 ## 데이터베이스 테이블 구조  
 ### sector_1 테이블
