@@ -40,6 +40,9 @@
 ![image01](https://github.com/user-attachments/assets/314d692a-7076-44ff-8528-0803608eff3b) 
 ![image02](https://github.com/user-attachments/assets/455a404e-87f6-4c7c-b93e-45683171e1ab)
 
+## 시연 영상
+[https://youtube.com/shorts/NbpUv54LRSM?feature=share](https://youtu.be/QqGUVOrVUVM)
+
 ## 데이터베이스 테이블 구조
   
 ### SPPB_user 테이블
