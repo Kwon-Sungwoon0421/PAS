@@ -1,6 +1,7 @@
 # PAS (Parcel Automation System)
 개발기간: 2024-11-26~2024-12-10  
 개발인원: 3명  
+맡은 업무: PHP 제작 및 서버 연결, Anroid Studio 앱 개발, Arduino 개발, 하드웨어 제작
 
 ## 프로젝트 배경 및 개요
 - 오프라인 시장이 축소되고 온라인 시장이 급격히 성장하면서 택배 수요가 매년 폭발적으로 증가
@@ -53,15 +54,18 @@
    - sector_4 // VL53L0X 레이저 센서 4의 상태 업데이트
    - sector_insert // sector_1~4의 쿼리문이 UPDATE이므로 첫 데이터 삽입을 위한 INSERT 쿼리문  
   
-2. **Android Studio**
-   (1) Java
-      - MainActivity // 실시간 모니터링 화면
+2. **Android Studio**  
+   (1) Java  
+      - MainActivity // 실시간 모니터링 화면  
 
-   (2) XML
-      - activity_main
+   (2) XML  
+      - activity_main  
 
-3. **Arduino**
-   - 
+3. **Arduino**  
+   - 3laser // 레이저 센서
+   - linear // 리니어 모터, IR센서
+   - servo_barcode_lcd // 서보모터, 바코드 스캐너, lcd
+   - stepmotor // 스텝 모터
 
 ## 데이터베이스 테이블 구조  
 ### sector_1 테이블
