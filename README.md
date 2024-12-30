@@ -30,7 +30,8 @@
    - Wi-Fi를 이용해 어플에서 실시간으로 각 섹터의 상태를 확인
 
 ## 시스템 구성 요소
-   1. **하드웨어 구성**  
+   1. **하드웨어 구성**
+        
       (1) **컨베이어 시스템**  
          - Linear Motor: 택배를 컨베이어 벨트 위로 이동  
          - Nema17 Step Motor: 5cm/s의 속도로 컨베이어 벨트 구동  
@@ -46,7 +47,8 @@
          - SMPS: 220V 전압을 24V, 12V로 변환하여 스텝 모터와 리니어 모터에 공급
          - LM2596: 12V를 5V로 변환하여 아두이노와 서보 모터 등 여러 모듈에 공급
 
-   2. **소프트웨어 구성**  
+   3. **소프트웨어 구성**
+        
       (1) **안드로이드 앱**
          - Wi-Fi를 이용하여 실시간 모니터링 화면을 통해 섹터의 상태를 확인
 
@@ -55,17 +57,8 @@
          - 일정 값 이하의 데이터가 들어올 경우 문제 발생 상태로 인식
 
       (3) **데이터베이스**
-         - 각 섹터의 레이저 센서 데이터 저장
-
-## 개발 과정 및 내용
-- SMPS를 통해 가정용 220V를 24V와 12V로 변환하며, 12V 전력선에서 L298N을 통해 따로 5V 전력선으로도 변환
-- Nema17 스텝 모터는 벨트를 구동시키며 물체의 이동 속도를 약 5cm/s로 설정
-- HX711 로드셀 센서는 실시간 무게를 측정하고 LCD에 출력
-- DE1200 바코드 스캐너는 물품 정보를 읽고 LCD에 출력, 이를 바탕으로 서보모터가 서울, 인천, 부산 등으로 분류
-- TCRT5000 IR 센서는 HX711 로드셀센서 위의 물체를 감지하며, 감지된 물체를 Linear Motor가 이동시킴
-- VL53L0X 레이저 센서는 각 섹터마다 하나씩 설치하여 물체의 벨트 이동 중 끼임 상태를 확인
-- ESP8266을 통해 Wi-Fi에 연결하여 벨트 내 물체의 끼임 상태를 계속해서 서버에 전송 및 관리자에게 알림
-
+         - 각 섹터의 레이저 센서 데이터 저장  
+  
 ## 구조
 
 ## DFD
@@ -104,9 +97,13 @@
 
 - sector_2~4 모두 동일한 테이블
   
-## 사진
+## 사진 및 영상
+### 하드웨어 사진  
 ![image01](https://github.com/user-attachments/assets/314d692a-7076-44ff-8528-0803608eff3b) 
-![image02](https://github.com/user-attachments/assets/455a404e-87f6-4c7c-b93e-45683171e1ab)
+![image02](https://github.com/user-attachments/assets/455a404e-87f6-4c7c-b93e-45683171e1ab)  
 
-## 시연 영상
+### 테이블
+![테이블](https://github.com/user-attachments/assets/84337b07-35ad-40ac-9e1b-0b10e5288f9b) ![테이블 2](https://github.com/user-attachments/assets/b2e0981b-26c6-4fe6-aa5b-b67b2f778fed)  
+
+### 시연 영상
 [https://youtube.com/shorts/NbpUv54LRSM?feature=share](https://youtu.be/QqGUVOrVUVM)
