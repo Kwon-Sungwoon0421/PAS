@@ -59,7 +59,48 @@
       (3) **데이터베이스**
          - 각 섹터의 레이저 센서 데이터 저장  
   
-## 구조
+## 클래스 다이어그램
+### 스텝 모터
+![StepMotor_CD](https://github.com/user-attachments/assets/3320225c-b01b-44a0-8e92-c36156c61be5)  
+1. **Step Motor** 
+   -  스텝 모터의 속도 및 방향을 제어하여 컨베이어 벨트 구동  
+  
+  
+### 리니어 모터, IR 센서
+![Linear_CD](https://github.com/user-attachments/assets/bac3587c-a4f6-481f-9908-0bf775ef080c)  
+1. **Liner Motor**  
+   - IR 센서의 상태에 따라 모터 동작  
+
+2. **IR Sensor**  
+   - 센서의 상태를 확인  
+  
+  
+### 서보 모터, 바코드 스캐너, LCD, 로드셀 센서
+![Servo_CD](https://github.com/user-attachments/assets/7bd8f2f7-e92c-4a40-a951-ea44fa5ea0c1)  
+1. **Servo Motor**  
+   - 지역 객체를 생성하고 스캔된 바코드의 정보에 해당하는 서보 모터를 구동  
+
+2. **Barcode Scaner**  
+   - 바코드를 스캔하고 인식된 정보를 토대로 서보 모터 및 LCD에 정보 전달 
+
+3. **HX711**  
+   - 택배의 무게를 측정하고 LCD에 정보 전달  
+
+4. **LiquidCrystal_I2C**  
+   - 스캔된 바코드 정보와 무게를 화면에 출력  
+
+### 레이저 센서
+![Laser_CD](https://github.com/user-attachments/assets/f858558c-8e65-479b-be70-b75ce8c6d188)  
+1. **VL53L0X**  
+   - 레이저 센서 마다 고유 Address를 변경하여 여러 레이저 센서를 사용할 수 있도록 함  
+   - 1초마다 데이터를 읽어들이고 5초 동안의 평균을 계산  
+   - 5초 평균 데이터를 서버로 보내 레이저 센서가 설치된 각 섹터의 상태를 업데이트  
+
+2. **HTTPClient**  
+   - GET 방식을 사용하여 클라이언트에서 서버로 데이터 전송  
+
+3. **WiFi**  
+   - WiFi를 통해 서버-클라이언트 간의 상호작용을 가능케 함  
 
 ## DFD
 
