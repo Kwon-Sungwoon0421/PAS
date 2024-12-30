@@ -81,9 +81,9 @@
       - activity_main  
 
 3. **Arduino**  
-   - 3laser // 레이저 센서
+   - 3laser // esp8266, 레이저 센서
    - linear // 리니어 모터, IR센서
-   - servo_barcode_lcd // 서보모터, 바코드 스캐너, lcd
+   - servo_barcode_lcd // 서보모터, 바코드 스캐너, lcd, 로드셀 무게센서
    - stepmotor // 스텝 모터
 
 ## 데이터베이스 테이블 구조  
