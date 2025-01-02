@@ -1,5 +1,5 @@
 # PAS (Parcel Automation System)
-개발기간: 2024-11-26~2024-12-10  
+개발기간: 2024-11-18~2024-12-10  
 개발인원: 3명  
 맡은 업무: PHP 제작 및 서버 연결, Anroid Studio 앱 개발, Arduino 개발, 하드웨어 제작
 
